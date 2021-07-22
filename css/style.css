@@ -1,0 +1,8 @@
+.slideshow-box {
+  display: flex;
+  overflow: hidden;
+}
+.slideshow {
+  display: flex;
+  animation: loop-slide 20s infinite linear 1s both;
+}
