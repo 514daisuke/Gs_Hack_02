@@ -16,12 +16,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../20210722Hack/css/choice.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <title>選択肢２</title>
+    <title>選択肢３</title>
 </head>
 
 <body>
 
-    <h1>避暑地で過ごすなら？</h1>
+    <h1>好きなキャラクターは？</h1>
 
     <div id='output'></div>
 
@@ -40,18 +40,21 @@
         <div>
 
             <div class ="choice">
-                <a href='choice3.php?count=${answer1}'><img src="../20210722Hack/img/shizen.png" alt="外でアクティブをする" width="250" height="200"></a>
+                <a href='result.php?count=${answer1}'>
+                <img src="../20210722Hack/img/fugu.png" alt="海幸" width="250" height="200"></a>
             </div>
 
             <div class ="choice">
-                <a href='choice3.php?count=${answer2}'><img src="../20210722Hack/img/rekishi.png" alt="観光に行く" width="250" height="200"></a>
+                <a href='result.php?count=${answer2}'>
+                <img src="../20210722Hack/img/kruibo.png" alt="山幸"  width="250" height="200"></a>
             </div>
 
             <div class ="choice">
-                <a href='choice3.php?count=${answer3}'><img src="../20210722Hack/img/home.png" alt="１日寝て過ごす"width="250" height="200"></a>
+                <a href='result.php?count=${answer3}'><img src="../20210722Hack/img/boya.png" alt="歴史"  width="250" height="200"></a>
             </div>
 
         </div>
+
 
         `
 
