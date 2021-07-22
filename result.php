@@ -1,69 +1,31 @@
 <?php
-// var_dump($_POST);
+// var_dump($_GET);
 // exit();
 
-session_start();
-include('functions.php');
-check_session_id();
-
-$pdo = connect_to_db();
-$user_id = $_SESSION['id'];
-
-//  select文を変更
-// $sql = 'SELECT * FROM `user_tabel`LEFT OUTER JOIN (SELECT user_id, COUNT(user_id) AS cnt FROM check_table GROUP BY user_id) AS likes ON user_tabel.id = likes.user_id';
-
-$stmt = $pdo->prepare($sql);
-$status = $stmt->execute();
-
-// アウトプットの情報をうまく変更する
-if ($status == false) {
-    $error = $stmt->errorInfo();
-    echo json_encode(["error_msg" => "{$error[2]}"]);
-    exit();
-} else {
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    $output = "";
-    foreach ($result as $record) {
-        $output .= "<tr>";
-        $output .= "<td>{$record["no"]}</td>";
-
-        // $output .= "<td><a href='edit.php?id={$record["id"]}'>編集</a></td>";
-        $output .= "</tr>";
-    }
-    unset($record);
-}
+$count = (int)$_GET["count"];
+var_dump($count);
 
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>あなただけの隠れ家</title>
-</head>
-
-<link rel="stylesheet" href="../20210722Hack/css/style.css">
 <body>
-    <fieldset>
-        <legend></legend>
-        <a href="logout.php">ログアウト</a>
+    <h1>総合計</h1>
+
+    <div id='output'></div>
+
+    <!-- jpuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        const data = <?= json_encode($count) ?>;
+        num = data % 4
+
+        const outputData = `総合計${data}を４で割った余りは${num}`
+
+        $("#output").html(outputData);
+    </script>
 
 
-
-
-
-
-
-
-
-                <!-- <?= $output ?> -->
-    </fieldset>
-    <section>
-
-
-    </section>
 
 </body>
 

@@ -16,19 +16,14 @@
     <h1>選択肢１</h1>
 
     <div>
-        <a href='choice2.php?choice01=1'>のんびりしたい</a>
+        <a href='choice2.php?count=1'>のんびりしたい</a>
     </div>
     <div>
-        <a href='choice2.php?choice01=2'>刺激が欲しい</a>
+        <a href='choice2.php?count=2'>刺激が欲しい</a>
     </div>
     <div>
-        <a href='choice2.php?choice01=3'>アクティブに動きたい</a>
+        <a href='choice2.php?count=3'>アクティブに動きたい</a>
     </div>
-
-
-    <!-- <button onclick="location.href='choice2.php?choice01=1'">のんびりしたい</button> -->
-    <!-- <a href='Negotiation_act.php?Target_id=<?= $Target_result["id"] ?>&My_id=<?= $My_result["id"] ?>'>交換依頼</a> -->
-
 
 
 </body>
