@@ -5,7 +5,6 @@
 $count = (int)$_GET["count"];
 var_dump($count);
 
-
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +18,7 @@ var_dump($count);
 </head>
 
 <body>
-    <h1>選択肢２</h1>
+    <h1>選択肢３</h1>
 
     <div id='output'></div>
 
@@ -35,13 +34,13 @@ var_dump($count);
 
         const outputData = `
             <div>
-                <a href='choice3.php?count=${answer1}'>１をしたい</a>
+                <a href='result.php?count=${answer1}'>１をしたい</a>
             </div>
             <div>
-                <a href='choice3.php?count=${answer2}'>２が欲しい</a>
+                <a href='result.php?count=${answer2}'>２が欲しい</a>
             </div>
             <div>
-                <a href='choice3.php?count=${answer3}'>３で遊びたい</a>
+                <a href='result.php?count=${answer3}'>３で遊びたい</a>
             </div>
         `
 
