@@ -1,14 +1,11 @@
 <?php
-// var_dump($_GET);
+$count = (int)$_GET["count"] % 4 + 1;
+var_dump($count);
 // exit();
-
-// $count = (int)$_GET["count"];
-// var_dump($count);
 
 include("functions.php");
 
-// $id = $_GET["id"];
-$id = 3;
+$id = (int)$_GET["count"] % 4 + 1;
 $pdo = connect_to_db();
 
 $sql = 'SELECT * FROM villa_table WHERE id=:id';

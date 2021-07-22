@@ -2,7 +2,7 @@
 // var_dump($_GET);
 // exit();
 
-// $count = (int)$_GET["count"];
+$count = (int)$_GET["count"];
 // var_dump($count);
 
 ?>
