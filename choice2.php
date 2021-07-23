@@ -19,7 +19,7 @@
     <title>選択肢２</title>
 </head>
 
-<body>
+<body class="bg">
 
     <h1>避暑地で過ごすなら？</h1>
 
@@ -37,18 +37,21 @@
 
         const outputData = `
 
-        <div>
+        <div class = "choice_all">
 
             <div class ="choice">
-                <a href='choice3.php?count=${answer1}'><img src="../20210722Hack/img/shizen.png" alt="外でアクティブをする" width="250" height="200"></a>
+                <a href='choice3.php?count=${answer1}'><img src="../20210722Hack/img/shizen.png" alt="外でアクティブをする" width="325" height="250"></a>
+                <p class="box10">アクティブに</p>
             </div>
 
             <div class ="choice">
-                <a href='choice3.php?count=${answer2}'><img src="../20210722Hack/img/rekishi.png" alt="観光に行く" width="250" height="200"></a>
+                <a href='choice3.php?count=${answer2}'><img src="../20210722Hack/img/rekishi.png" alt="観光に行く" width="325" height="250"></a>
+                <p class="box10">趣ある場所ヘ行く</p>
             </div>
 
             <div class ="choice">
-                <a href='choice3.php?count=${answer3}'><img src="../20210722Hack/img/home.png" alt="１日寝て過ごす"width="250" height="200"></a>
+                <a href='choice3.php?count=${answer3}'><img src="../20210722Hack/img/home.png" alt="１日寝て過ごす" width="325" height="250"></a>
+                <p class="box10">おうち時間</p>
             </div>
 
         </div>

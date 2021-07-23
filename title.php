@@ -25,18 +25,26 @@
             <div class="slide"><span><img src="../20210722Hack/img/house_rekishi.png" alt="" width="450" height="350"></span></div>
             <div class="slide"><span><img src="../20210722Hack/img/house_shizen.png" alt="" width="450" height="350"></span></div>
             <div class="slide"><span><img src="../20210722Hack/img/house_umi.png" alt="" width="450" height="350"></span></div>
-            <div class="slide"><span><img src="../20210722Hack/img/house_umi.png" alt="" width="450" height="350"></span></div>
             <div class="slide"><span><img src="../20210722Hack/img/house_yama.png" alt="" width="450" height="350"></span></div>
             <div class="slide"><span><img src="../20210722Hack/img/house_rekishi.png" alt="" width="450" height="350"></span></div>
             <div class="slide"><span><img src="../20210722Hack/img/house_shizen.png" alt="" width="450" height="350"></span></div>
+            <div class="slide"><span><img src="../20210722Hack/img/house_yama.png" alt="" width="450" height="350"></span></div>
             <div class="slide"><span><img src="../20210722Hack/img/house_umi.png" alt="" width="450" height="350"></span></div>
         </div>
     </div>
 
-    <div class="click">
-        <p>あなたにオススメな隠れ家をクイズに答えて確認しよう</p></br>
-        <button><a href='choice1.php'>クリック</a></button>
+    <div>
+
     </div>
+
+
+    <div class="click_text">
+        <p>あなたにオススメな隠れ家をAIが判定</p>
+    </div>
+    <div class="click">
+        <a href="choice1.php" class="btn-square-pop">クリック</a>
+    </div>
+
 
 
 </body>

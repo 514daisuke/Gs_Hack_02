@@ -19,7 +19,7 @@
     <title>選択肢３</title>
 </head>
 
-<body>
+<body class="bg">
 
     <h1>好きなキャラクターは？</h1>
 
@@ -37,20 +37,23 @@
 
         const outputData = `
 
-        <div>
+        <div class = "choice_all">
 
             <div class ="choice">
                 <a href='result.php?count=${answer1}'>
                 <img src="../20210722Hack/img/fugu.png" alt="海幸" width="250" height="200"></a>
+                <p class="box10">ふくとらちゃん</p>
             </div>
 
             <div class ="choice">
                 <a href='result.php?count=${answer2}'>
                 <img src="../20210722Hack/img/kruibo.png" alt="山幸"  width="250" height="200"></a>
+                <p class="box10">くりまろくん</p>
             </div>
 
             <div class ="choice">
                 <a href='result.php?count=${answer3}'><img src="../20210722Hack/img/boya.png" alt="歴史"  width="250" height="200"></a>
+                <p class="box10">はるるぼうや</p>
             </div>
 
         </div>
