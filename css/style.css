@@ -1,11 +1,39 @@
-.slideshow-box {
-  display: flex;
-  overflow: hidden;
+
+.row{
+    padding-top: 5rem;
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
 }
-.slideshow {
+
+.autoplay-slider {
   display: flex;
-  animation: loop-slide 20s infinite linear 1s both;
+  min-width: 100%;
+  width: min-content;
+  animation: 30s linear infinite sliderAnimation;
 }
+
+.slide {
+  height: 200px;
+  width: 400px;
+  border: 1px solid #000;
+  margin: 20px;
+  position: relative;
+}
+span {
+  position: absolute;
+  font-size: 1em;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes sliderAnimation {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 body {
   font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic,
     "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -26,8 +54,16 @@ body {
   box-sizing: border-box;
 }
 
+.h1 {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.header_logo {
+
+.click {
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;

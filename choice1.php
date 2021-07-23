@@ -28,7 +28,7 @@
         </div>
 
         <div class="choice">
-            <a href='choice2.php?count=3'><img src="../20210722Hack/img/kaigai.png" alt="海外"  width="250" height="200"></a>
+            <a href='choice2.php?count=3'><img src="../20210722Hack/img/kaigai.png" alt="海外" width="250" height="200"></a>
         </div>
 
     </div>

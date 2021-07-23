@@ -34,6 +34,7 @@ if ($status == false) {
     <title>ようこそあなただけの隠れ家へ</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script type="text/javascript" charset="UTF-8"></script>
 </head>
 
 <body>
@@ -43,38 +44,34 @@ if ($status == false) {
         </div>
     </header>
 
-    <nav>
+    <!-- <nav>
         <ul>
             <div>
                 <div><a href="#ACCESS">ACCESS</a></div>
                 <div><a href="#CONTACT">CONTACT</a></div>
             </div>
         </ul>
-    </nav>
+    </nav> -->
 
     <main>
         <div>
             <section>
-                <h2 class="">ABOUT</h2>
                 <div class="">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p><?= $record["villa_name"] ?></p>
-                                </td>
-                                <td>
-                                    <p><?= $record["address"] ?></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <img src="<?= $record["image"] ?>" alt="">
-                            </tr>
-                        </tbody>
-                    </table>
+                    <tr>
+                        <td>
+                            <p><?= $record["villa_name"] ?></p>
+                        </td>
+                        <td>
+                            <p><?= $record["address"] ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <img src="<?= $record["image"] ?>" alt="">
+                    </tr>
                 </div>
             </section>
         </div>
+
 
 
         <div>
@@ -103,31 +100,36 @@ if ($status == false) {
                     </li>
                     <li>
                         <label class="form_label" for="kana">カナ</label>
-                        <input class="form" type="text" id="kana" placeholder="ジーズ シシ">
+                        <input class="form" type="text" name="kana" placeholder="ジーズ シシ">
                     </li>
                     <li>
                         <label class="form_label_adress" for="email">メールアドレス</label>
-                        <input class="form" type="email" id="email" placeholder="example@gs.ac.jp">
+                        <input class="form" type="email" name="email" placeholder="example@gs.ac.jp">
                     </li>
                     <li>
-                        <div class="check_box">
+                        <!-- <div class="check_box">
                             <div class="check_box_input">
                                 <div>
                                     <input type="checkbox" id="check1">
-                                    <label for="check1">いますぐ契約する</label>
+                                    <label for="check1">いますぐ契約したい</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" id="check2">
-                                    <label for="check2">少し考える</label>
+                                    <label for="check2">詳細を確認したい</label>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <label for="content">お問い合わせの内容</label>
+                        <textarea name="content" id="" cols="100" rows="3" placeholder="300文字以内で入力してください"></textarea>
                     </li>
                 </ul>
 
-                <div>
+                <!-- <div>
                     <button type="submit">送信</button>
-                </div>
+                </div> -->
+                <p>
+                    <input type="submit" name="send" value="送信">
+                </p>
             </form>
         </div>
         <div>
@@ -146,29 +148,3 @@ if ($status == false) {
 </body>
 
 </html>
-
-
-
-
-<!-- <body>
-    <h1>総合計</h1>
-
-    <div id='output'></div> -->
-
-<!-- jpuery読み込み -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script>
-        const data = <?= json_encode($count) ?>;
-        num = data % 4
-
-        const outputData = `総合計${data}を４で割った余りは${num}`
-
-        $("#output").html(outputData);
-    </script>
-
-
-
-</body>
-
-</html> -->
