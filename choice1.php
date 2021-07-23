@@ -14,23 +14,25 @@
     <title>選択肢１</title>
 </head>
 
-<body>
+<body class="bg">
 
     <h1>山口県で過ごしたい場所は？</h1>
 
-    <div>
+    <div class="choice_all">
         <div class="choice">
-            <a href='choice2.php?count=1'><img src="../20210722Hack/img/nature.png" alt="自然" width="250" height="200"></a>
+            <a href='choice2.php?count=1'><img src="../20210722Hack/img/nature.png" alt="自然" width="325" height="250"></a>
+            <p class="box10">自然豊かな場所</p>
         </div>
 
         <div class="choice">
-            <a href='choice2.php?count=2'><img src="../20210722Hack/img/building.png" alt="都会" width="250" height="200"></a>
+            <a href='choice2.php?count=2'><img src="../20210722Hack/img/building.png" alt="都会" width="325" height="250"></a>
+            <p class="box10">港町</p>
         </div>
 
         <div class="choice">
-            <a href='choice2.php?count=3'><img src="../20210722Hack/img/kaigai.png" alt="海外"  width="250" height="200"></a>
+            <a href='choice2.php?count=3'><img src="../20210722Hack/img/kaigai.png" alt="海外" width="325" height="250"></a>
+            <p class="box10">どっちも全部！</p>
         </div>
-
     </div>
 
 </body>
